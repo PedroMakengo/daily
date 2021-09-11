@@ -7,14 +7,19 @@ body {
   font-family: Roboto;
   font-size: 1rem;
   background-color: #0b0b0b;
+
+  background-image: url(../img/info.svg);
+  background-repeat: no-repeat;
+
+  background-position-x: right;
+  background-position-x: 1225px;
+  background-position-y: 34px;
 }
 
 .container {
-  width: 100%;
   max-width: 300px;
   margin: 0 auto;
-
-  align-items: center;
+  text-align: center;
 }
 
 .borda-gradiente {
@@ -26,8 +31,6 @@ body {
 
 @media (max-width: 1024px) {
   .container {
-    width: 100%;
     max-width: 900px;
-    margin: 0 auto;
   }
 }

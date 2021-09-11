@@ -7,6 +7,9 @@
     <title>Daily</title>
     <link rel="stylesheet" href="assets/style/global.css" />
     <link rel="stylesheet" href="assets/style/daily.css" />
+
+    <link rel="stylesheet" href="assets/style/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/style/owl.theme.default.css" />
   </head>
   <body>
     <header>
@@ -22,11 +25,21 @@
           <span>Como projetar melhores experiências ?</span>
           <a href="#">Quero Participar</a>
         </div>
+
         <div class="slider-show">
-          <div class="slider-1">
-            <img src="assets/img/photo-3.svg" alt="" />
+          <div id="owl-carousel" class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="assets/img/photo-3.svg" />
+            </div>
+            <div class="item">
+              <img src="assets/img/photo-1.svg" />
+            </div>
+            <div class="item">
+              <img src="assets/img/photo-2.svg" />
+            </div>
           </div>
         </div>
+
         <div class="redes-sociais">
           <div>
             <a href="#">
@@ -44,9 +57,14 @@
     </main>
 
     <footer>
-      <div class="container">
+      <div class="container footer">
         <p>© Todos os direitos reservados a <a href="#">Laryssa </a></p>
+        <p>Desenvolvido por <a href="#">Pedro Makengo </a></p>
       </div>
     </footer>
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/daily.js"></script>
   </body>
 </html>

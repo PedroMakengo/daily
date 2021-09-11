@@ -19,8 +19,16 @@ header a {
 
   font-weight: 300;
 
-  border-radius: 50px;
   margin: 0 auto;
+
+  transition: background 0.5s;
+}
+
+/* Animação */
+header a:hover {
+  border-radius: 0;
+  background-color: #9337f4;
+  filter: brightness(1);
 }
 
 main {
@@ -45,12 +53,14 @@ main section .design-cultura {
 }
 
 main section .design-cultura h1 {
+  font-weight: 400;
   font-size: 2rem;
   line-height: 3rem;
   margin-bottom: 0.5rem;
 }
 
 main section .design-cultura span {
+  font-weight: bold;
   font-size: 1.1rem;
   font-weight: 200;
 }
@@ -132,22 +142,21 @@ footer p a {
   font-weight: bold;
 }
 
+/* Responsividade */
 @media (min-width: 1024px) {
-  header {
-    margin: 0;
-    height: 5rem;
-
-    display: flex;
-    align-items: center;
+  .container {
+    width: 100%;
+    max-width: 900px;
   }
 
   header a {
     height: 2.8rem;
     width: 200px;
+
+    margin: 0;
   }
 
   main section {
-    display: flex;
     align-items: center;
     justify-content: space-between;
 
@@ -193,7 +202,7 @@ footer p a {
   }
 
   main section .redes-sociais a + a {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   main section .redes-sociais img {
@@ -207,5 +216,53 @@ footer p a {
 
   footer p {
     text-align: left;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    width: 100%;
+    max-width: 1120px;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  header a {
+    height: 2.8rem;
+    width: 200px;
+
+    margin: 0;
+  }
+
+  main section .design-cultura h1 {
+    font-size: 3rem;
+  }
+
+  main section .design-cultura span {
+    font-size: 2rem;
+  }
+
+  main section .design-cultura a {
+    margin-top: 3rem;
+    height: 3rem;
+  }
+
+  main section .slider-show {
+    width: 50%;
+  }
+
+  #owl-carousel,
+  .item {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
