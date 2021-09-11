@@ -7,6 +7,7 @@ header {
 }
 
 header a {
+  width: 320px;
   height: 3rem;
 
   display: flex;
@@ -19,6 +20,7 @@ header a {
   font-weight: 300;
 
   border-radius: 50px;
+  margin: 0 auto;
 }
 
 main {
