@@ -67,11 +67,17 @@ main section .design-cultura a {
   color: #fff;
   text-decoration: none;
 
-  font-weight: bold;
+  font-weight: 300;
 
   border: 1px solid #9337f4;
 
   background: #9337f4;
+
+  transition: filter 0.5s;
+}
+
+main section .design-cultura a:hover {
+  filter: brightness(1.6);
 }
 
 main section .slider-show {
@@ -97,6 +103,10 @@ main section .slider-show img {
   margin: 0 auto;
 }
 
+main section .redes-sociais {
+  display: none;
+}
+
 footer {
   height: 11vh;
 
@@ -118,4 +128,82 @@ footer p a {
   color: #9337f4;
   text-decoration: none;
   font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  header {
+    margin: 0;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+  }
+
+  header a {
+    height: 2.8rem;
+    width: 200px;
+  }
+
+  main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: row;
+  }
+
+  main section .design-cultura {
+    width: 50%;
+    text-align: left;
+
+    line-height: 3rem;
+  }
+
+  main section .design-cultura a {
+    margin: 0;
+  }
+
+  main section .slider-show {
+    width: 70%;
+    order: 2;
+  }
+
+  main section .slider-show img {
+    margin: 0;
+    float: left;
+    width: 100%;
+    height: 300px;
+  }
+
+  main section .redes-sociais {
+    width: 10%;
+    order: 3;
+
+    display: block;
+  }
+
+  main section .redes-sociais a {
+    display: block;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+  }
+
+  main section .redes-sociais a + a {
+    margin-top: 1rem;
+  }
+
+  main section .redes-sociais img {
+    width: 20px;
+  }
+
+  footer {
+    border-top: 0;
+    margin: 0;
+  }
+
+  footer p {
+    text-align: left;
+  }
 }

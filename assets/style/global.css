@@ -23,3 +23,11 @@ body {
   border-width: 2px;
   border-image-source: linear-gradient(to left, #e66475, #a13ede);
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
