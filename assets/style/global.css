@@ -29,6 +29,16 @@ body {
   border-image-source: linear-gradient(to left, #e66475, #a13ede);
 }
 
+.owl-dots button span {
+  background: linear-gradient(to left, #e66475, #a13ede) !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.owl-dots button.active span {
+  background: linear-gradient(to left, #e66475, #e66475) !important;
+}
+
 @media (max-width: 1024px) {
   .container {
     max-width: 900px;
