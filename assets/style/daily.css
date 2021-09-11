@@ -45,7 +45,6 @@ main section {
 
 main section .design-cultura {
   order: 2;
-  margin-top: 1rem;
   height: 30vh;
 
   text-align: center;
@@ -103,7 +102,7 @@ main section .slider-show {
 
   text-align: center;
 
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 main section .slider-show img {
